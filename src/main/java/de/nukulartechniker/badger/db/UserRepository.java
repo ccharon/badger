@@ -1,6 +1,7 @@
-package de.nukulartechniker.badger.db.entity;
+package de.nukulartechniker.badger.db;
 
 import de.nukulartechniker.badger.db.ReadOnlyRepository;
+import de.nukulartechniker.badger.db.entity.User;
 
 import java.util.List;
 

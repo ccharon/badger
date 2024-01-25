@@ -3,7 +3,9 @@ package de.nukulartechniker.badger.db.entity;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Data
@@ -22,5 +24,5 @@ public class User {
             joinColumns = { @JoinColumn(name = "USERS_ID") },
             inverseJoinColumns = { @JoinColumn(name = "BADGES_ID") }
     )
-    Set<Badge> badges = new HashSet<>();
+    List<Badge> badges = new ArrayList<>();
 }

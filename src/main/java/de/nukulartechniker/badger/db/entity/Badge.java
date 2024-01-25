@@ -26,6 +26,6 @@ public class Badge {
     @Column(name = "DESCRIPTION")
     private String description;
 
-    @Column(name = "IMAGE")
+    @Column(name = "IMAGE", columnDefinition = "varbinary")
     private byte[] image;
 }

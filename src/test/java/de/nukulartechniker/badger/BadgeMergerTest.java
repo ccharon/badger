@@ -17,7 +17,7 @@ public class BadgeMergerTest {
     public void testMerge() throws IOException {
 
         //Test Badge als Bytearray laden
-        InputStream in = getClass().getResourceAsStream("/static/test512.png");
+        InputStream in = getClass().getResourceAsStream("/static/01.png");
         byte[] bytes = IOUtils.toByteArray(in);
 
         List<Badge> badges = new ArrayList<>();
