@@ -8,7 +8,7 @@ it could be used to keep track of events a group of persons participated or thin
 
 | URL Parameter | Usage                                                                             |
 |---------------|-----------------------------------------------------------------------------------|
-| user4         | a user present in the database, all batches associated to the user will be loaded |
+| user4         | a user present in the database, all badges associated to the user will be loaded |
 | 48            | the width and height a single badge will have in the returned png                 |
 | 8             | number of badges in a row                                                         |
 
