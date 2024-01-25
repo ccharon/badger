@@ -1,6 +1,4 @@
 # Badger
-an idea quick dirty implemented :P
-
 a simple rest api that supports only this one get request type, it returns a png consisting of every badge associated to the given userid.
 it could be used to keep track of events a group of persons participated or things that got accomplished. the resulting png can then be added to a page where these badges can be viewed.
 
