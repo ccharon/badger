@@ -1,0 +1,1 @@
+images created by one of microsofts ki tools, i asked for some achievements that an it-department might have
