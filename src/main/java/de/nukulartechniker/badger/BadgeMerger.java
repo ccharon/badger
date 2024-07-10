@@ -20,7 +20,13 @@ public class BadgeMerger {
         try {
             // determin size of the resulting image
             int width = bmi.getBadgesList().size() < bmi.getElementsPerRow() ? bmi.getBadgeDimensionsxy() * bmi.getBadgesList().size() : bmi.getBadgeDimensionsxy() * bmi.getElementsPerRow();
-            int height = bmi.getBadgeDimensionsxy() * (1 + bmi.getBadgesList().size() / bmi.getElementsPerRow());
+            int height = 0;
+
+            if (bmi.getBadgesList().size() % bmi.getElementsPerRow() == 0) {
+                height = bmi.getBadgeDimensionsxy() * (bmi.getBadgesList().size() / bmi.getElementsPerRow());
+            } else {
+                height = bmi.getBadgeDimensionsxy() * (1 + bmi.getBadgesList().size() / bmi.getElementsPerRow());
+            }
 
             // create image with final dimensions
             BufferedImage result = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
