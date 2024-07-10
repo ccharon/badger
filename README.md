@@ -4,9 +4,9 @@ it could be used to keep track of events a group of persons participated or thin
 
 ```http://localhost:8080/api/badges/user4/badges.png```
 
-optional request parameters are batches per row and/or xy resolution
-```http://localhost:8080/api/badges/user4/badges.png?numrow=8&xyres=64```
+optional request parameters are badges per row and/or xy resolution
 
+```http://localhost:8080/api/badges/user4/badges.png?numrow=8&xyres=64```
 
 | URL Parameter | Usage                                                                             |
 |---------------|-----------------------------------------------------------------------------------|
