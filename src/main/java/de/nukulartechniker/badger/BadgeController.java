@@ -33,6 +33,8 @@ public class BadgeController {
             @RequestParam(name = "numrow", defaultValue = "10") int numrow
     ) throws IOException {
 
+        if (name.length() > 255) name ="";
+
         if (xyres < 16) xyres = 16;
         if (xyres > 512) xyres = 512;
 
